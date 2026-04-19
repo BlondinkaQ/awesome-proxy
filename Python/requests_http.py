@@ -62,7 +62,7 @@ def main():
 
     prx = proxy()
     response = requests.request("GET", url, data=payload, headers=headers, proxies=prx, timeout=10)
-    print(response)
+
     return response.status_code
 
 
